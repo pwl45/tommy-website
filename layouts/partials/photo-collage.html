@@ -1,0 +1,26 @@
+<style>
+.photo-collage {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-collage video ,
+.photo-collage img {
+  height: 400px;
+  width: auto;
+  object-fit: cover;
+}
+</style>
+<div class="photo-collage">
+  {{ $images := readDir "static/media" }}
+  {{ range $images }}
+      {{ if or (hasSuffix .Name ".jpg") (hasSuffix .Name ".jpeg") (hasSuffix .Name ".png") }}
+        <img src="/media/{{ .Name }}" alt="{{ .Name }}">
+      {{ else if or (hasSuffix .Name ".mp4") (hasSuffix .Name ".webm") }}
+        <video controls>
+          <source src="/media/{{ .Name }}" type="video/{{ if hasSuffix .Name ".mp4" }}mp4{{ else }}webm{{ end }}">
+          Your browser does not support the video tag.
+        </video>
+      {{ end }}
+  {{ end }}
+</div>
