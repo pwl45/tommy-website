@@ -1,0 +1,14 @@
+# Hugo-generated files
+/public/
+/resources/_gen/
+# Dependency directories
+/node_modules/
+# OS generated files
+.DS_Store
+# Temporary files
+tmp/
+.tmp/
+temp/
+# Editor directories
+.idea/
+.vscode/
