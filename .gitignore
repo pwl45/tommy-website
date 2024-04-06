@@ -1,14 +1,19 @@
-# Hugo-generated files
+# Hugo
 /public/
 /resources/_gen/
-# Dependency directories
-/node_modules/
-# OS generated files
+/themes/**/resources/_gen/
+
+# Media - consider Git LFS or another storage for these
+/static/media/*.mov
+/static/media/*.mp4
+/static/media/*.heic
+/static/media/*.zip
+
+# OS and Editor
 .DS_Store
-# Temporary files
-tmp/
-.tmp/
-temp/
-# Editor directories
 .idea/
 .vscode/
+*.swp
+
+# Node (if using npm with your theme or site)
+/node_modules/
