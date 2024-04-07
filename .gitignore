@@ -1,19 +1,19 @@
-# Hugo
-/public/
-/resources/_gen/
-/themes/**/resources/_gen/
+# # Hugo
+# /public/
+# /resources/_gen/
+# /themes/**/resources/_gen/
 
-# Media - consider Git LFS or another storage for these
-/static/media/*.mov
-/static/media/*.mp4
-/static/media/*.heic
-/static/media/*.zip
+# # Media - consider Git LFS or another storage for these
+# /static/media/*.mov
+# /static/media/*.mp4
+# /static/media/*.heic
+# /static/media/*.zip
 
-# OS and Editor
-.DS_Store
-.idea/
-.vscode/
-*.swp
+# # OS and Editor
+# .DS_Store
+# .idea/
+# .vscode/
+# *.swp
 
-# Node (if using npm with your theme or site)
-/node_modules/
+# # Node (if using npm with your theme or site)
+# /node_modules/
